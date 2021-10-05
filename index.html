@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Weather App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+		<link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      crossorigin="anonymous"
+      rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+		<div class="blur">
+		</div>
+    <div id="container" class="container bounce">
+      <div class="content">
+        <h1>Marc weather app</h1>
+        <input id="input" class="input" placeholder="Enter the City/Country Name" />
+      </div>
+
+      <div class="main-weather">
+        <p id="date" class="date"></p>
+        <p id="city" class="city"></p>
+        <p class="temp" id="temp"></p>
+        <p id="min-max" class="min-max"></p>
+        <p id="weather-type" class="weather"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
