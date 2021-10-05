@@ -5,15 +5,15 @@ const api = {
 
 const input = document.querySelector('#input');
 input.addEventListener('keypress', (e) => {
-	if (e.keyCode === 13) {
-		getWeather(input.value);
+  if (e.keyCode === 13) {
+    getWeather(input.value);
 
-		/*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
-		const { DateTime } = luxon;
-  	const now = DateTime.now();
-  	document.querySelector('#date').textContent = now.toLocaleString(DateTime.DATETIME_MED);
-		document.querySelector('.main-weather').style.display = 'block';
-	}
+    /*-------------------FUNCTION TO DISPLAY DATE AND TIME USING MOMENT.JS-------------------*/
+    const { DateTime } = luxon;
+    const now = DateTime.now();
+    document.querySelector('#date').textContent = now.toLocaleString(DateTime.DATETIME_MED);
+    document.querySelector('.main-weather').style.display = 'block';
+  }
 });
 
 function getWeather(city) {
